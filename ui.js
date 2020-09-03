@@ -24,6 +24,6 @@ class UI {
       weather.main.feels_like
     )}℉`;
     this.pressure.textContent = `Atmospheric Pressure: ${weather.main.pressure}hPa`;
-    this.wind.textContent = `Windspeed: ${weather.wind.speed}mph`;
+    this.wind.textContent = `Windspeed: ${Math.round(weather.wind.speed)}mph`;
   }
 }
